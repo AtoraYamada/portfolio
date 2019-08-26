@@ -50,49 +50,50 @@
   /*** Images With Color Fallbacks ***/
   .item:nth-child(1){
     background-color: #e74c3c;
-    background-image: url(https://i.pinimg.com/originals/e1/12/f8/e112f875d7f05db887f3d7750474fb1a.jpg);
+    background-image: url("../../../public/1.jpg");
     background-position: center top;
   }
 
   .item:nth-child(2){
     background-color: #3498db;
-    background-image: url(https://static.comicvine.com/uploads/original/8/80103/4528554-amazing_spider-man_vol_3_19.1_ponsor_variant_textless.jpg);
+    background-image: url("../../../public/2.jpg");
     background-position: center 35%; 
   }
 
   .item:nth-child(3){
     background-color: #bdc3c7;
-    background-image: url(http://www.writeups.org/wp-content/uploads/Black-Panther-Avengers-Marvel-Comics-h427.jpg);
-    background-position: center 20%;
+    background-image: url("../../../public/3.jpg");
+    background-size: cover;
   }
 
   .item:nth-child(4){
     background-color: #2c3e50;
-    background-image: url(http://designrfix.com/wp-content/uploads/2010/05/The-incredible-hulk-art-12.jpg);
+    background-image: url("../../../public/4.jpg");
   } 
 
   .item:nth-child(5){
     background-color: #2c3e50;
-    background-image: url("../../../public/top_main.jpg");
+    background-image: url("../../../public/5.jpg");
     background-position: center 20px;
   } 
 
   .item:nth-child(6){
     background-color: #27ae60;
-    background-image: url(http://cdn.collider.com/wp-content/uploads/2015/01/fantastic-four-comic-2.jpg);
+    background-image: url("../../../public/6.jpg");
     background-position: 50% 25%;
   } 
 
   .item:nth-child(7){
     background-color: #f1c40f;
-    background-image: url(https://nerdeux.files.wordpress.com/2011/09/rogues-thor-01.jpg);
-    background-position: left 27%;   
+    background-image: url("../../../public/7.jpg");
+    background-position: top -140px left -50px;
+    background-size: 90%;
   } 
 
   .item:nth-child(8){
     background-color: #2980b9;
-    background-image: url(https://2.bp.blogspot.com/-YSoMZR-S8CU/VRhKBl7HsZI/AAAAAAAAQqs/_s8iKmBMCUs/s1600/x-men-1-cover.jpg);
-    background-position: center 22%;  
+    background-image: url("../../../public/8.jpg");
+    background-position: top -150px left;  
   } 
 
 /*** Grid Set Up ***/
