@@ -50,55 +50,55 @@
   /*** Images With Color Fallbacks ***/
   .item:nth-child(1){
     background-color: #e74c3c;
-    background-image: url("../../../public/1.jpg");
+    background-image: url("../../assets/topHeader/1.jpg");
     background-position: center top;
     background-size: cover;
   }
 
   .item:nth-child(2){
     background-color: #3498db;
-    background-image: url("../../../public/2.jpg");
+    background-image: url("../../assets/topHeader/2.jpg");
     background-position: center 35%; 
     background-size: cover;
   }
 
   .item:nth-child(3){
     background-color: #bdc3c7;
-    background-image: url("../../../public/3.jpg");
+    background-image: url("../../assets/topHeader/3.jpg");
     background-size: cover;
   }
 
   .item:nth-child(4){
     background-color: #2c3e50;
-    background-image: url("../../../public/4.jpg");
+    background-image: url("../../assets/topHeader/4.jpg");
     background-size: cover;
     background-position: top 40% left 70%;
   } 
 
   .item:nth-child(5){
     background-color: #2c3e50;
-    background-image: url("../../../public/5.jpg");
+    background-image: url("../../assets/topHeader/5.jpg");
     background-position: center 5%;
     background-size: cover;
   } 
 
   .item:nth-child(6){
     background-color: #27ae60;
-    background-image: url("../../../public/6.jpg");
+    background-image: url("../../assets/topHeader/6.jpg");
     background-position: 50% 25%;
     background-size: cover;
   } 
 
   .item:nth-child(7){
     background-color: #f1c40f;
-    background-image: url("../../../public/7.jpg");
+    background-image: url("../../assets/topHeader/7.jpg");
     background-position: top 40% left 50%;
     background-size: cover;
   } 
 
   .item:nth-child(8){
     background-color: white;
-    background-image: url("../../../public/8.jpg");
+    background-image: url("../../assets/topHeader/8.jpg");
     background-position: top 30% left 70%;
     background-size: cover;
   } 
