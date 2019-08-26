@@ -1,43 +1,43 @@
 <template>
-  <div>
-    <div class="my_container">
-      <ul>
-        <a href="#">
-          <li class="block">
-            <img src="../../assets/topLinks/profile.jpg">
-            <span class="odd">Profile</span>
-          </li>
-        </a> 
-        <a href="#">
-          <li class="block">
-            <img src="../../assets/topLinks/favorites.jpg">
-            <span>Favorites</span>
-          </li>
-        </a>
-        <a href="#">
-          <li class="block">
-            <img src="../../assets/topLinks/skills.jpg">
-            <span class="odd">Skills</span>
-          </li>
-        </a>
-        <a href="#">
-          <li class="block">
-            <img src="../../assets/topLinks/contact.jpg">
-            <span>Contact</span>
-          </li>
-        </a>
-      </ul>  
-    </div>
+  <div class="my_container">
+    <ul>
+      <a href="#">
+        <li class="block">
+          <img src="../../assets/topLinks/profile.jpg">
+          <span class="odd">Profile</span>
+        </li>
+      </a> 
+      <a href="/">
+        <li class="block">
+          <img src="../../assets/topLinks/favorites.jpg">
+          <span>Favorites</span>
+        </li>
+      </a>
+      <a href="#">
+        <li class="block">
+          <img src="../../assets/topLinks/skills.jpg">
+          <span class="odd">Skills</span>
+        </li>
+      </a>
+      <a href="#">
+        <li class="block">
+          <img src="../../assets/topLinks/contact.jpg">
+          <span>Contact</span>
+        </li>
+      </a>
+    </ul>  
   </div>
 </template>
 
 <style scoped>
   *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
-
+  .my_container{
+    overflow: auto;
+  }
   a:nth-child(odd) li{
     background-color: black;
   }
