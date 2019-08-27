@@ -19,13 +19,13 @@
           <span class="odd">Skills</span>
         </li>
       </a>
-      <a href="#">
+      <router-link to="/contact">
         <li class="block">
           <img src="../../assets/topLinks/contact.jpg">
           <span>Contact</span>
         </li>
-      </a>
-    </ul>  
+      </router-link>
+    </ul> 
   </div>
 </template>
 
