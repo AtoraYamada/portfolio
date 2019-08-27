@@ -1,47 +1,55 @@
 <template>
   <div>
     <main>
-      <router-view name="header"></router-view>
-      <router-view name="link"></router-view>
+      <TopHeader></TopHeader>
+      <TopLink></TopLink>
     </main>
-    <footer>
-      <p>
-        日本茶と<br>
-        プログラミングは<br>
-        たがへども<br>
-        おくふかきこと<br>
-        おなじ所なり
-      </p>
-    </footer>
+    <router-view name="content"></router-view>
+    <p><router-link to="/">TOP PAGE</router-link></p>
   </div>
 </template>
+
+<script>
+import TopHeader from "./components/Top/TopHeader.vue";
+import TopLink from "./components/Top/TopLink.vue";
+
+export default {
+  components: {
+    TopHeader,
+    TopLink
+  }
+}
+</script>
 
 <style scoped>
   main {
     position: relative;
     z-index: 2;
-    margin-bottom: 400px;
-    -webkit-box-shadow: #000 0 7px 35px 0;
+    margin-bottom: 350px;
+    /* -webkit-box-shadow: #000 0 7px 35px 0;
     -moz-box-shadow: #000 0 7px 35px 0;
-    box-shadow: #000 0 7px 35px 0;
+    box-shadow: #000 0 7px 35px 0; */
   }
-  footer {
-    text-align: left;
+  p {
     position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 400px;  
-    background: #2A2A2A;
-    font-size: calc(2.2rem + ((1vw - 0.64rem) * 2.1429));
-    color: white; 
-    line-height: calc(5.0rem + ((1vw - 0.64rem) * 2.1429));
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+    z-index: 3;
+    font-weight: bold;
   }
-  footer p{
-    margin: auto;
-    padding-top: 2%;
-    font-family: 'PMingLiU';
-    writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;
+  p a {
+    background: rgb(219, 7, 7);
+    text-decoration: none;
+    color: white;
+    width: 80px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+  }
+  p a:hover {
+    text-decoration: none;
+    background: rgb(219, 53, 53);
   }
 </style>
