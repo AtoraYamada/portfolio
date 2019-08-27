@@ -87,7 +87,7 @@
 
   p{
     text-align:center;
-    font-size:2em;
+    font-size: calc(1.4rem + ((1vw - 0.64rem) * 2.1429));
     margin:40px 0 20px 0; 
     font-family: PressStart;
     line-height: 1.2;
