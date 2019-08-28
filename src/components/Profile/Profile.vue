@@ -1,6 +1,14 @@
 <template>
   <div class="content">
-    <p class="title">PROFILE</p>
+    <div class="title">
+      <span class="letter" data-letter="P">P</span>
+      <span class="letter" data-letter="R">R</span>
+      <span class="letter" data-letter="O">O</span>
+      <span class="letter" data-letter="F">F</span>
+      <span class="letter" data-letter="I">I</span>
+      <span class="letter" data-letter="L">L</span>
+      <span class="letter" data-letter="E">E</span>
+    </div>
     <div class="foo" data-delighter>
       <p>
         1992年生まれ<br>
@@ -125,12 +133,69 @@ export default {
     50%{background-position:0% 100%}
     100%{background-position:93% 0%}
   }
+  @import url(https://fonts.googleapis.com/css?family=Lato:900);
+
+  .letter{
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    position: relative;
+    color: #634030;
+    transform-style: preserve-3d;
+    perspective: 400;
+    z-index: 1;
+  }
+  .letter:before, .letter:after{
+    position:absolute;
+    content: attr(data-letter);
+    transform-origin: top left;
+    top:0;
+    left:0;
+  }
+  .letter, .letter:before, .letter:after{
+    transition: all 0.3s ease-in-out;
+  }
+  .letter:before{
+    color: #fff;
+    text-shadow: 
+      -1px 0px 1px rgba(255,255,255,.8),
+      1px 0px 1px rgba(0,0,0,.8);
+    z-index: 3;
+    transform:
+      rotateX(0deg)
+      rotateY(-15deg)
+      rotateZ(0deg);
+  }
+  .letter:after{
+    color: rgba(0,0,0,.11);
+    z-index:2;
+    transform:
+      scale(1.08,1)
+      rotateX(0deg)
+      rotateY(0deg)
+      rotateZ(0deg)
+      skew(0deg,1deg);
+  }
+  .letter:hover:before{
+    color: #fafafa;
+    transform:
+      rotateX(0deg)
+      rotateY(-40deg)
+      rotateZ(0deg);
+  }
+  .letter:hover:after{
+    transform:
+      scale(1.08,1)
+      rotateX(0deg)
+      rotateY(40deg)
+      rotateZ(0deg)
+      skew(0deg,22deg);
+  }
   .title{
     text-align: center;
     width: 65%;
-    padding-top:  30px;
+    padding-top: 30px;
     margin: auto;
-    font-size: 4em;
+    font-size: calc(4.0rem + ((1vw - 0.64rem) * 2.1429));
   }
   .content{
     margin-top: -350px;
