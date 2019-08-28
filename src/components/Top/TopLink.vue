@@ -1,12 +1,12 @@
 <template>
   <div class="my_container">
     <ul>
-      <a href="#">
+      <router-link to="/profile">
         <li class="block">
           <img src="../../assets/topLinks/profile.jpg">
           <span class="odd">Profile</span>
         </li>
-      </a> 
+      </router-link> 
       <a href="/">
         <li class="block">
           <img src="../../assets/topLinks/favorites.jpg">
