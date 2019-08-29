@@ -74,12 +74,6 @@
     }
   }
 
-  @font-face {
-    font-family: 'PressStart';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
-  }
   #container{
     margin: auto;
     padding-bottom: 50px;
@@ -89,12 +83,12 @@
     text-align:center;
     font-size: calc(1.4rem + ((1vw - 0.64rem) * 2.1429));
     margin:40px 0 20px 0; 
-    font-family: PressStart;
+    font-family: 'Press Start 2P', cursive;    
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.911);
   }
   a{
-    font-family: PressStart;
+    font-family: 'Press Start 2P', cursive;
     text-decoration:none; 
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
