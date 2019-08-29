@@ -45,13 +45,13 @@
     <div class="foo" data-delighter>
       <p>
         東京大学理科一類入学<br>
-        煎茶道と出会う。（Favorites参照）<br>
+        煎茶道と出会う。<br>
+        （Favorites参照）
       </p>
     </div>
     <div class="foo" data-delighter>
       <p>
-        勉強とともに、煎茶道の道を歩みつつ、<br>
-        理学部物理学科に進学。
+        勉強とともに、煎茶道の道を歩みつつ、理学部物理学科に進学。
       </p>
     </div>
     <div class="foo" data-delighter>
