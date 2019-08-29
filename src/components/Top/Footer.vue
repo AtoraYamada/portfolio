@@ -18,9 +18,27 @@
     width: 100%;
     height: 400px;  
     background: #2A2A2A;
-    font-size: calc(1.4rem + ((1vw - 0.64rem) * 2.1429));
+    font-size: 30px;
     color: white; 
-    line-height: calc(5.0rem + ((1vw - 0.64rem) * 2.1429));
+    line-height: 80px;
+  }
+  @media screen and (max-width: 1280px) {
+    footer {
+      font-size: 30px;
+      line-height: 80px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    footer {
+      font-size: 30px;
+      line-height: 80px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    footer {
+      font-size: 20px;
+      line-height: 50px;
+    }
   }
   footer p{
     margin: 50px auto;
