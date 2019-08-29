@@ -32,7 +32,7 @@
   }
 
   .logo b{
-    font-size: 4em;
+    font-size: 80px;
     font-family: Vibur;
     color: #fee;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
@@ -81,7 +81,7 @@
 
   p{
     text-align:center;
-    font-size: calc(1.4rem + ((1vw - 0.64rem) * 2.1429));
+    font-size: 30px;
     margin:40px 0 20px 0; 
     font-family: 'Press Start 2P', cursive;    
     line-height: 1.2;
@@ -93,6 +93,31 @@
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .logo b {
+      font-size: 80px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .logo b {
+      font-size: 60px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .logo b {
+      font-size: 40px;
+    }
+    p {
+      font-size: 10px;
+    }
   }
 
   p:nth-child(1) a{
@@ -411,18 +436,5 @@
                 0 0 50px #B6FF00,
                 0 0 75px #B6FF00;
     }
-  }
-
-  /*RESPONSIVE*/
-  @media (max-width: 650px) {
-    
-    #container{
-      width: 100%;
-    }
-    
-    p{
-      font-size:0.5em;
-    }
-
   }
 </style>
