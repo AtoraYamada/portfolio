@@ -7,12 +7,12 @@
           <span class="odd">Profile</span>
         </li>
       </router-link> 
-      <a href="/">
+      <router-link to="/favorites">
         <li class="block">
           <img src="../../assets/topLinks/favorites.jpg">
           <span>Favorites</span>
         </li>
-      </a>
+      </router-link>
       <a href="#">
         <li class="block">
           <img src="../../assets/topLinks/skills.jpg">
