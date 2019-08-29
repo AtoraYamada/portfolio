@@ -204,7 +204,6 @@ export default {
   }
   .foo{
     color: white;
-    font-size: calc(1.0rem + ((1vw - 0.64rem) * 2.1429));
     padding: 10px 10%;
     width: 50%;
     margin-top: 100px;
@@ -217,6 +216,25 @@ export default {
     -webkit-animation: animation 20s ease infinite;
     -moz-animation: animation 20s ease infinite;
     animation: animation 20s ease infinite;
+    font-size: 25px;
+  }
+  @media screen and (max-width: 1280px) {
+    .foo {
+      font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .foo {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .foo {
+      font-size: 10px;
+    }
+    .foo p {
+      width: 80% !important;
+    }
   }
   .foo p{
     margin: auto;
