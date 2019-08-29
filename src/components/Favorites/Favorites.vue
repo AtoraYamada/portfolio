@@ -125,11 +125,26 @@
     text-align: left;
     z-index: 2;
     background-color: white;
-    font-size: calc(1.0rem + ((1vw - 0.64rem) * 2.1429));
+    font-size: 24px;
   }
   h1{
     font-size: calc(3.0rem + ((1vw - 0.64rem) * 2.1429));
     font-weight: bold;
+  }
+  @media screen and (max-width: 1280px) {
+    p {
+      font-size: 24px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    p {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: 10px;
+    }
   }
   .koolon{
     margin: 2% 5%;
