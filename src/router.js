@@ -9,6 +9,7 @@ import Router from "vue-router";
 const Footer = () => import ("./components/Top/Footer.vue"); 
 const Profile = () => import ("./components/Profile/Profile.vue"); 
 const Favorites = () => import ("./components/Favorites/Favorites.vue"); 
+const Skills = () => import ("./components/Skills/Skills.vue"); 
 const Contact = () => import ("./components/Contact/Contact.vue"); 
 
 Vue.use(Router);
@@ -34,6 +35,11 @@ export default new Router({
       path: '/contact',
       components: {
         content: Contact
+      }
+    }, {
+      path: '/skills',
+      components: {
+        content: Skills
       }
     }, {
       path: '*',

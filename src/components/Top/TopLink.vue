@@ -13,12 +13,12 @@
           <span>Favorites</span>
         </li>
       </router-link>
-      <a href="#">
+      <router-link to="/skills">
         <li class="block">
           <img src="../../assets/topLinks/skills.jpg">
           <span class="odd">Skills</span>
         </li>
-      </a>
+      </router-link>
       <router-link to="/contact">
         <li class="block">
           <img src="../../assets/topLinks/contact.jpg">
