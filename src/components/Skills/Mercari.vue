@@ -3,6 +3,8 @@
     <h1>mercari</h1>
     <h2>OVERVIEW</h2>
     <p>
+      <a href="http://52.199.29.90/" class="link" target="_blank">JUMP TO "mercari"</a><br>
+      (ID: hoge, PW: 1234)<br><br>
       メルカリのクローンサイト（登録・出品・購入まで一通り実装）<br><br>
       使用した言語：<br>
       Haml・SCSS・Ruby・Ruby on Rails・JavaScript・jQuery・MySQL・Github・AWS<br><br>
@@ -28,7 +30,7 @@
       <p class="caution">
         出品用アカウント<br>email: hoge@gmail.com, PW: hogehoge<br><br>
         購入用アカウント<br>email: fuga@gmail.com, PW: fugafuga<br><br>
-        カード情報<br>番号: 4242424242424242, 日付: 未来, コード: 任意3桁数値]<br><br>
+        カード情報<br>番号: 4242424242424242, 日付: 未来, コード: 任意3桁数値<br><br>
         機能確認後は、ログアウト処理をお願いします
       </p>
     </div>
@@ -39,7 +41,7 @@
         <img src="../../assets/skills/mercari/er.png">
         <h4>ER図</h4>
         <p class="explain">
-          <a href="https://github.com/AtoraYamada/freemarket_sample_53b">https://github.com/AtoraYamada/freemarket_sample_53</a><br>
+          <a href="https://github.com/AtoraYamada/freemarket_sample_53b" target="_blank">https://github.com/AtoraYamada/freemarket_sample_53</a><br>
           <ul style="list-style: disc;">
             <li>詳細は上記リンクのREADMEをご参照下さい</li>
           </ul>
@@ -58,7 +60,7 @@
         <img src="../../assets/skills/mercari/signup_eg.png">
         <h4>登録１ページ目（バリデーションによるエラーメッセージ）</h4>
         <p class="explain">
-          <a href="http://52.199.29.90/signup" class="link">http://52.199.29.90/signup</a><br>
+          <a href="http://52.199.29.90/signup" target="_blank">http://52.199.29.90/signup</a><br>
           <ul style="list-style: disc;">
             <li>ウィザード形式のフォーム</li>
             <li>メールアドレスによる登録が可能です</li>
@@ -73,11 +75,11 @@
           番号：4242424242424242<br>
           期限：未来の日付<br>
           セキュリティコード：任意の3桁の数字<br>
-          <a href="https://atora1992.hatenablog.com/entry/2019/07/17/133106" class="link">関連ブログ記事１</a><br>
-          <a href="https://atora1992.hatenablog.com/entry/2019/07/25/164837" class="link">関連ブログ記事２</a><br>
-          <a href="https://atora1992.hatenablog.com/entry/2019/08/29/115959" class="link">関連ブログ記事３</a><br>
-          <a href="https://atora1992.hatenablog.com/entry/2019/07/25/164315" class="link">関連ブログ記事４</a><br>
-          <a href="https://atora1992.hatenablog.com/entry/2019/08/12/185922" class="link">関連ブログ記事５</a><br>
+          <a href="https://atora1992.hatenablog.com/entry/2019/07/17/133106" target="_blank">関連ブログ記事１</a><br>
+          <a href="https://atora1992.hatenablog.com/entry/2019/07/25/164837" target="_blank">関連ブログ記事２</a><br>
+          <a href="https://atora1992.hatenablog.com/entry/2019/08/29/115959" target="_blank">関連ブログ記事３</a><br>
+          <a href="https://atora1992.hatenablog.com/entry/2019/07/25/164315" target="_blank">関連ブログ記事４</a><br>
+          <a href="https://atora1992.hatenablog.com/entry/2019/08/12/185922" target="_blank">関連ブログ記事５</a><br>
         </p>
         <div class="close" @click="showModal = false">
           CLOSE
@@ -93,7 +95,7 @@
         <img src="../../assets/skills/mercari/logout.png">
         <h4>ログアウト画面</h4>
         <p class="explain">
-          <a href="http://52.199.29.90/users/sign_in" class="link">http://52.199.29.90/users/sign_in</a>
+          <a href="http://52.199.29.90/users/sign_in" target="_blank">http://52.199.29.90/users/sign_in</a>
           <ul style="list-style: disc;">
             <li>gem "Devise"を用いたログイン・ログアウト機能</li>
             <li>登録したメールアドレス・PWによるログインが可能です</li>
@@ -117,8 +119,8 @@
           <ul style="list-style: disc;">
             <li>gem "ancestry"を用いたカテゴリーデータ作成</li>
           </ul>
-          <a href="https://atora1992.hatenablog.com/entry/2019/07/08/215444" class="link">関連ブログ記事１</a><br>
-          <a href="https://atora1992.hatenablog.com/entry/2019/07/08/215737" class="link">関連ブログ記事２</a>
+          <a href="https://atora1992.hatenablog.com/entry/2019/07/08/215444" target="_blank">関連ブログ記事１</a><br>
+          <a href="https://atora1992.hatenablog.com/entry/2019/07/08/215737" target="_blank">関連ブログ記事２</a>
         </p>
         <div class="close" @click="showModal = false">
           CLOSE
@@ -137,13 +139,13 @@
           <ul style="list-style: disc;">
             <li>非同期通信による動的セレクトボックス</li>
             <li>ログイン後、商品出品・編集画面でご覧いただけます</li>
-            <li>・gem "ancestry"を導入し作成したカテゴリーデータを使用しています</li>
+            <li>gem "ancestry"を導入し作成したカテゴリーデータを使用しています</li>
             <li>項目を選択後、選択項目を取得し、JSでAjaxを用いて非同期通信を行います</li>
             <li>選択項目と紐付くデータの取得、jbuilderでのjson成形後、jsonを用いてセレクトボックスを作成しています</li>
             <li>サイズが必要のないもの（e.g. テレビゲーム）はサイズ入力欄は生成されません</li>
           </ul>
-          <a href="https://atora1992.hatenablog.com/entry/2019/07/17/140342" class="link">関連ブログ記事１</a><br>
-          <a href="https://atora1992.hatenablog.com/entry/2019/07/17/154613" class="link">関連ブログ記事２</a>
+          <a href="https://atora1992.hatenablog.com/entry/2019/07/17/140342" target="_blank">関連ブログ記事１</a><br>
+          <a href="https://atora1992.hatenablog.com/entry/2019/07/17/154613" target="_blank">関連ブログ記事２</a>
         </p>
         <div class="close" @click="showModal = false">
           CLOSE
@@ -179,7 +181,7 @@
         <img src="../../assets/skills/mercari/list2.png">
         <h4>商品出品（下部）</h4>
         <p class="explain">
-          <a href="http://52.199.29.90/products/new" class="link">http://52.199.29.90/products/new</a>
+          <a href="http://52.199.29.90/products/new" target="_blank">http://52.199.29.90/products/new</a>
           <ul style="list-style: disc;">
             <li>ログイン後、上記リンクから商品出品ページへ遷移できます</li>
             <li>全ての必須項目を入力していただくと、出品が可能です</li>
@@ -221,8 +223,8 @@
           <ul style="list-style: disc;">
             <li>バリデーションによるエラーメッセージが表示されます</li>
           </ul>
-          <a href="https://atora1992.hatenablog.com/entry/2019/08/07/181741" class="link">関連ブログ記事１</a><br>
-          <a href="https://atora1992.hatenablog.com/entry/2019/07/10/201455" class="link">関連ブログ記事２</a>
+          <a href="https://atora1992.hatenablog.com/entry/2019/08/07/181741" target="_blank">関連ブログ記事１</a><br>
+          <a href="https://atora1992.hatenablog.com/entry/2019/07/10/201455" target="_blank">関連ブログ記事２</a>
         </p>
         <div class="close" @click="showModal = false">
           CLOSE
@@ -258,12 +260,15 @@ export default {
   h2 {
     text-align: center;
     font-size: 45px;
-    margin-top: 2%;
+    margin-top: 4%;
   }
   p {
     display: block;
-    padding: 5% 5% 0; 
+    padding: 3% 5% 5%; 
     font-size: 30px;
+  }
+  .link {
+    color: white;
   }
   .function-wrapper {
     text-align: center;

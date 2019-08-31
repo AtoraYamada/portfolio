@@ -3,6 +3,7 @@
     <h1>Chat-Space</h1>
     <h2>OVERVIEW</h2>
     <p>
+      <a href="http://3.113.93.153" class="link" target="_blank">JUMP TO "Chat-Space"</a><br><br>
       グループチャットアプリケーション<br><br>
       使用した言語：<br>
       Haml・SCSS・Ruby・Ruby on Rails・JavaScript・jQuery・MySQL・Github・AWS<br><br>
@@ -29,7 +30,7 @@
         <img src="../../assets/skills/chat_space/chat_signup.png">
         <h4>サインアップ画面</h4>
         <p class="explain">
-          <a href="http://3.113.93.153/users/sign_up">http://3.113.93.153/users/sign_up</a><br>
+          <a href="http://3.113.93.153/users/sign_up" target="_blank">http://3.113.93.153/users/sign_up</a><br>
           <ul style="list-style: disc;">
             <li>gem "Devise"を用いたサインアップ機能</li>
             <li>Nameがユーザー名として登録されます</li>
@@ -52,7 +53,7 @@
         <img src="../../assets/skills/chat_space/edit_user.png">
         <h4>アカウント編集画面</h4>
         <p class="explain">
-          <a href="http://3.113.93.153/users/sign_in" class="link">http://3.113.93.153/users/sign_in</a><br>
+          <a href="http://3.113.93.153/users/sign_in" class="link" target="_blank">http://3.113.93.153/users/sign_in</a><br>
           <ul style="list-style: disc;">
             <li>gem "Devise"を用いたログイン・ログアウト機能</li>
             <li>登録したEmail・Passwordでログインできます</li>
@@ -178,12 +179,15 @@ export default {
   h2 {
     text-align: center;
     font-size: 45px;
-    margin-top: 2%;
+    margin-top: 4%;
   }
   p {
     display: block;
-    padding: 5% 5% 0; 
+    padding: 3% 5% 5%; 
     font-size: 30px;
+  }
+  .link {
+    color: white;
   }
   .function-wrapper {
     text-align: center;
