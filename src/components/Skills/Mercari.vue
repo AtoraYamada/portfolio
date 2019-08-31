@@ -69,12 +69,12 @@
             <li>sessionを用いて情報は一括保存されます（支払い方法まで入力後、DBに保存）</li>
             <li>登録完了後、gem "Devise"のメソッドにより、自動ログインします</li>
             <li>ローカル環境では、OmniAuthによるSNS認証も可能です（SSL化・ドメイン取得で本番環境でも動くよう実装）</li>
+            ※ロボット認証は未実装です<br>
+            ※クレジットカードは以下の数値を入力して下さい（購入時にも必要です）<br>
+            番号：4242424242424242<br>
+            期限：未来の日付<br>
+            セキュリティコード：任意の3桁の数字<br>
           </ul>
-          ※ロボット認証は未実装です<br>
-          ※クレジットカード情報は以下の数値を入力して下さい（購入時にも必要です）<br>
-          番号：4242424242424242<br>
-          期限：未来の日付<br>
-          セキュリティコード：任意の3桁の数字<br>
           <a href="https://atora1992.hatenablog.com/entry/2019/07/17/133106" target="_blank">関連ブログ記事１</a><br>
           <a href="https://atora1992.hatenablog.com/entry/2019/07/25/164837" target="_blank">関連ブログ記事２</a><br>
           <a href="https://atora1992.hatenablog.com/entry/2019/08/29/115959" target="_blank">関連ブログ記事３</a><br>
@@ -101,8 +101,8 @@
             <li>登録したメールアドレス・PWによるログインが可能です</li>
             <li>ログイン後、マイページの設定→ログアウトからログアウトページへ遷移できます</li>
             <li>ローカルでは、SNS認証によるPW不要のログインが可能です（SSL化・ドメイン取得で本番環境でも動くよう実装）</li>
+            ※ロボット認証は未実装です
           </ul>
-          ※ロボット認証は未実装です
         </p>
         <div class="close" @click="showModal = false">
           CLOSE
@@ -207,11 +207,9 @@
         <p class="explain">
           <ul style="list-style: disc;">
             <li>ログイン後、マイページのサイドバー「出品した商品-出品中-」をクリックし商品を選択後、「商品を編集」にてご覧いただけます。もしくはログイン後、http://52.199.29.90/products/出品番号/edit　にてご覧いただけます。</li>
-          </ul>
-          ※出品番号：出品後、商品詳細ページのURLの数字を入力してください
-          <ul style="list-style: disc;">
+            ※出品番号：出品後、商品詳細ページのURLの数字を入力してください
             <li>画像の削除が可能です（JSを使用しています）</li>
-            <ol style="list-style: decimal;">
+            <ol style="list-style: decimal; padding-left: 1em;">
               <li>削除ボタンが押されたものを"display:hidden"にする</li>
               <li>「更新する」を押した後、JS側でsubmitを一旦止める</li>
               <li>"display:hidden"になっている画像のidを取得し配列化</li>
@@ -219,8 +217,6 @@
               <li>生成後、本submit</li>
               <li>コントローラで画像idの配列を取得し、そのidを元にDBから対象の画像の紐付けを削除する</li>
             </ol>
-          </ul>
-          <ul style="list-style: disc;">
             <li>バリデーションによるエラーメッセージが表示されます</li>
           </ul>
           <a href="https://atora1992.hatenablog.com/entry/2019/08/07/181741" target="_blank">関連ブログ記事１</a><br>
@@ -317,7 +313,7 @@ export default {
     color: white;
   }
   .explains img {
-    width: 80%;
+    width: 100%;
     padding: 2% 0 1%;
   }
   h4 {

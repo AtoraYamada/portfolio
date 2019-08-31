@@ -236,7 +236,7 @@ export default {
     color: white;
   }
   .explains img {
-    width: 80%;
+    width: 100%;
     padding: 2% 0 1%;
   }
   h4 {
