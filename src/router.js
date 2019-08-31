@@ -10,6 +10,8 @@ const Footer = () => import ("./components/Top/Footer.vue");
 const Profile = () => import ("./components/Profile/Profile.vue"); 
 const Favorites = () => import ("./components/Favorites/Favorites.vue"); 
 const Skills = () => import ("./components/Skills/Skills.vue"); 
+const ChatSpace = () => import ("./components/Skills/ChatSpace.vue"); 
+const Mercari = () => import ("./components/Skills/Mercari.vue"); 
 const Contact = () => import ("./components/Contact/Contact.vue"); 
 
 Vue.use(Router);
@@ -40,7 +42,16 @@ export default new Router({
       path: '/skills',
       components: {
         content: Skills
-      }
+      },
+      children: [
+        {
+          path: 'chat-space',
+          component: ChatSpace 
+        }, {
+          path: 'mercari',
+          component: Mercari
+        }
+      ]
     }, {
       path: '*',
       redirect: '/'
