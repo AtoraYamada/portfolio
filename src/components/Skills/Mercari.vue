@@ -308,7 +308,7 @@ export default {
     margin-top: 2%;
   }
   .explains {
-    width: 70%;
+    width: 80%;
     margin: auto;
     text-align: center;
     z-index: 2;
