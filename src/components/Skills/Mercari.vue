@@ -30,7 +30,10 @@
       <p class="caution">
         出品用アカウント<br>email: hoge@gmail.com, PW: hogehoge<br><br>
         購入用アカウント<br>email: fuga@gmail.com, PW: fugafuga<br><br>
-        カード情報<br>番号: 4242424242424242, 日付: 未来, コード: 任意3桁数値<br><br>
+        クレジットカードは以下の数値を入力して下さい（購入時にも必要です）<br>
+        番号：4242424242424242<br>
+        期限：未来の日付<br>
+        セキュリティコード：任意の3桁の数字<br><br>
         機能確認後は、ログアウト処理をお願いします
       </p>
     </div>
@@ -56,7 +59,7 @@
       <h2>サインアップ</h2>
       <div class="explains">
         <img src="../../assets/skills/mercari/signup.png">
-        <h4>登録方法選択画面<br>（「メールアドレスで登録」を選択して下さい）</h4>
+        <h4>登録方法選択画面<br>（「メールアドレスで登録」を選択）</h4>
         <img src="../../assets/skills/mercari/signup_eg.png">
         <h4>登録１ページ目<br>（バリデーションによるエラーメッセージ）</h4>
         <p class="explain">
