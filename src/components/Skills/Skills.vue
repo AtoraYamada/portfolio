@@ -19,18 +19,21 @@
       </div>
       <div class="skills">
         <h1 style="margin-bottom: 20px;">プログラミング言語</h1>
-        <a href="https://html.spec.whatwg.org/multipage/"><img src="../../assets/skills/html-5.svg" width="20%"></a>
-        <a href="http://haml.info/"><img src="../../assets/skills/haml.svg" width="20%"></a>
-        <a href="https://www.w3.org/TR/CSS/"><img src="../../assets/skills/css-3.svg" width="20%"></a>
-        <a href="https://sass-lang.com/"><img src="../../assets/skills/sass.svg" width="20%" style="margin-bottom: 4%;"></a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="../../assets/skills/javascript.svg" width="20%" style="margin-bottom: 2%;"></a>
-        <a href="https://jquery.com/"><img src="../../assets/skills/jquery.svg" width="21%" style="background-color: white; margin-bottom: 5%;"></a>
-        <a href="https://vuejs.org/"><img src="../../assets/skills/vue.svg" width="20%"></a>
-        <a href="https://www.ruby-lang.org/ja/"><img src="../../assets/skills/ruby.svg" width="18%"></a>
-        <a href="https://rubyonrails.org/"><img src="../../assets/skills/rails.svg" width="21%" style="margin-bottom: 5%;"></a>
-        <a href="https://developer.apple.com/swift/"><img src="../../assets/skills/swift.svg" width="20%"></a>
-        <a href="https://github.com/"><img src="../../assets/skills/github-icon.svg" width="20%" style="background-color: white; border-radius: 50%;"></a>
-        <a href="https://aws.amazon.com/"><img src="../../assets/skills/aws.svg" width="20%" style="background-color: white; margin-bottom: 3%;"></a>
+        <div class="prog">
+          <a href="https://html.spec.whatwg.org/multipage/"><img src="../../assets/skills/html-5.svg" width="20%" style="z-index: 2;"></a>
+          <a href="http://haml.info/"><img src="../../assets/skills/haml.svg" width="20%"></a>
+          <a href="https://www.w3.org/TR/CSS/"><img src="../../assets/skills/css-3.svg" width="20%"></a>
+          <a href="https://sass-lang.com/"><img src="../../assets/skills/sass.svg" width="20%" style="margin-bottom: 4%;"></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="../../assets/skills/javascript.svg" width="20%" style="margin-bottom: 2%;"></a>
+          <a href="https://jquery.com/"><img src="../../assets/skills/jquery.svg" width="21%" style="background-color: white; margin-bottom: 5%;"></a>
+          <a href="https://vuejs.org/"><img src="../../assets/skills/vue.svg" width="20%"></a>
+          <a href="https://www.ruby-lang.org/ja/"><img src="../../assets/skills/ruby.svg" width="18%"></a>
+          <a href="https://rubyonrails.org/"><img src="../../assets/skills/rails.svg" width="21%" style="margin-bottom: 5%;"></a>
+          <a href="https://developer.apple.com/swift/"><img src="../../assets/skills/swift.svg" width="20%"></a>
+          <a href="https://www.firebase.com/"><img src="../../assets/skills/firebase.svg" width="18%"></a>
+          <a href="https://github.com/"><img src="../../assets/skills/github-icon.svg" width="20%" style="background-color: white; border-radius: 50%;"></a>
+          <a href="https://aws.amazon.com/"><img src="../../assets/skills/aws.svg" width="20%" style="background-color: white; margin-bottom: 3%;"></a>
+        </div>
       </div>
       <div class="skills">
         <h1>WORKS</h1>
@@ -39,7 +42,7 @@
             <img class="work-image" src="../../assets/skills/chat_space.png" alt="Chat-Space（チャットアプリケーション）">
             <div class="work-description">
               Chat-Space<br>（チャットアプリケーション）<br><br>
-              <a href="https://atorayamada.github.io/portfolio/chat_space.html" class="button button-ghost">READ MORE</a>
+              <router-link to="/skills/chat-space" class="button button-ghost">READ MORE</router-link>
             </div>
           </div>
 
@@ -47,11 +50,12 @@
             <img class="work-image" src="../../assets/skills/mercari.png" alt="クローンサイト">
             <div class="work-description">
               クローンサイト<br>（mercari）<br><br>
-              <a href="https://atorayamada.github.io/portfolio/mercari.html" class="button button-ghost">READ MORE</a>
+              <router-link to="/skills/mercari" class="button button-ghost">READ MORE</router-link>
             </div>
           </div>
         </div>
       </div>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -228,6 +232,12 @@
     padding-bottom: 35px;
     border-bottom: solid 2px white;
   }
+  .prog {
+    background-color: white;
+    padding: 1% 1%;
+    position: relative;
+    z-index: 2;
+  }
   h1 {
     color: white;
     text-align: center;
@@ -236,8 +246,11 @@
   }
   p {
     display: block;
-    padding-top: 5%; 
+    padding: 5% 5% 0; 
     font-size: 30px;
+  }
+  img {
+    z-index: 2;
   }
 
   .works-wrapper {
