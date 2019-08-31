@@ -28,9 +28,9 @@
         <li class="button" @click="showModal = 8"><span>商品編集</span></li>
       </ul>
       <p class="caution">
-        出品用アカウント<br>email: hoge@gmail.com, PW: hogehoge<br><br>
-        購入用アカウント<br>email: fuga@gmail.com, PW: fugafuga<br><br>
-        クレジットカードは以下の数値を入力して下さい（購入時にも必要です）<br>
+        【出品用アカウント】<br>email: hoge@gmail.com, PW: hogehoge<br><br>
+        【購入用アカウント】<br>email: fuga@gmail.com, PW: fugafuga<br><br>
+        【クレジットカード】<br>
         番号：4242424242424242<br>
         期限：未来の日付<br>
         セキュリティコード：任意の3桁の数字<br><br>
@@ -333,6 +333,7 @@ export default {
   .caution {
     font-size: 20px;
     text-align: left;
+    width: 80%;
   }
   .close {
     margin: 3% auto 0;
