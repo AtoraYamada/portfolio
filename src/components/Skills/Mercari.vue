@@ -5,12 +5,12 @@
     <p>
       <a href="http://52.199.29.90/" class="link" target="_blank">JUMP TO "mercari"</a><br>
       (ID: hoge, PW: 1234)<br><br>
-      メルカリのクローンサイト（登録・出品・購入まで一通り実装）<br><br>
-      使用した言語：<br>
+      メルカリのクローンサイト<br>（登録・出品・購入まで一通り実装）<br><br>
+      【使用した言語】<br>
       Haml・SCSS・Ruby・Ruby on Rails・JavaScript・jQuery・MySQL・Github・AWS<br><br>
-      開発期間と平均作業時間：<br>
-      開発期間：約4週間　1日あたりの平均作業時間：約10時間<br><br>
-      開発体制：<br>
+      【開発期間と平均作業時間】<br>
+      開発期間：約4週間<br>1日あたりの平均作業時間：約10時間<br><br>
+      【開発体制】<br>
       アジャイル（スクラム）開発：スクラムマスター<br>
       チーム人数：6人（スクラムマスター含む）<br>
       Trelloによるタスク管理・Slackによる連絡
@@ -41,7 +41,7 @@
         <img src="../../assets/skills/mercari/er.png">
         <h4>ER図</h4>
         <p class="explain">
-          <a href="https://github.com/AtoraYamada/freemarket_sample_53b" target="_blank">https://github.com/AtoraYamada/freemarket_sample_53</a><br>
+          <a href="https://github.com/AtoraYamada/freemarket_sample_53b" target="_blank">README</a><br>
           <ul style="list-style: disc;">
             <li>詳細は上記リンクのREADMEをご参照下さい</li>
           </ul>
@@ -56,9 +56,9 @@
       <h2>サインアップ</h2>
       <div class="explains">
         <img src="../../assets/skills/mercari/signup.png">
-        <h4>登録方法選択画面（「メールアドレスで登録」を選択して下さい）</h4>
+        <h4>登録方法選択画面<br>（「メールアドレスで登録」を選択して下さい）</h4>
         <img src="../../assets/skills/mercari/signup_eg.png">
-        <h4>登録１ページ目（バリデーションによるエラーメッセージ）</h4>
+        <h4>登録１ページ目<br>（バリデーションによるエラーメッセージ）</h4>
         <p class="explain">
           <a href="http://52.199.29.90/signup" target="_blank">http://52.199.29.90/signup</a><br>
           <ul style="list-style: disc;">
@@ -247,8 +247,8 @@ export default {
 <style scoped>
   .indivisual {
     width: 85%;
-    margin: 3rem auto 10rem;
-    padding-bottom: 35px;
+    margin: 15% auto 40%;
+    padding-bottom: 20px;
     border-bottom: solid 2px white;
     color: white;
   }
@@ -285,7 +285,7 @@ export default {
   }
   ul {
     width: 100%;
-    padding: 0;
+    padding-bottom: 5%;
     z-index: 2;
   }
   .button {
@@ -298,7 +298,7 @@ export default {
     background-color: rgb(50, 50, 50);
     text-decoration: none;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     cursor: pointer;
   }
@@ -339,10 +339,64 @@ export default {
     margin: 3% auto 0;
     font-size: 20px;
     border: solid 1px white;
-    width: 20%;
+    width: 25%;
     cursor: pointer;
     z-index: 2;
     position: relative;
     background-color: black;
+  }
+
+  @media screen and (max-width: 1280px) {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 45px;
+    }
+    .button {
+      font-size: 12px;
+    }
+    h4, .explain, .close {
+      font-size: 20px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 50px !important;
+    }
+    h2 {
+      font-size: 35px !important;
+    }
+    .button {
+      font-size: 14px !important;
+      width: 40% !important;
+    }
+    h4, .explain, .close {
+      font-size: 15px !important;
+    }
+    p {
+      font-size: 20px !important;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 25px !important;
+    }
+    h2 {
+      font-size: 20px !important;
+    }
+    .button {
+      font-size: 10px !important;
+      width: 60% !important;
+    }
+    h4, .explain, .close {
+      font-size: 10px !important;
+    }
+    p {
+      font-size: 10px !important;
+    }
   }
 </style>

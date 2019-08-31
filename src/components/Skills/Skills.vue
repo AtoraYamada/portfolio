@@ -20,19 +20,19 @@
       <div class="skills">
         <h1 style="margin-bottom: 20px;">プログラミング言語</h1>
         <div class="prog">
-          <a href="https://html.spec.whatwg.org/multipage/"><img src="../../assets/skills/html-5.svg" width="20%" style="z-index: 2;"></a>
-          <a href="http://haml.info/"><img src="../../assets/skills/haml.svg" width="20%"></a>
-          <a href="https://www.w3.org/TR/CSS/"><img src="../../assets/skills/css-3.svg" width="20%"></a>
-          <a href="https://sass-lang.com/"><img src="../../assets/skills/sass.svg" width="20%" style="margin-bottom: 4%;"></a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="../../assets/skills/javascript.svg" width="20%" style="margin-bottom: 2%;"></a>
-          <a href="https://jquery.com/"><img src="../../assets/skills/jquery.svg" width="21%" style="background-color: white; margin-bottom: 5%;"></a>
-          <a href="https://vuejs.org/"><img src="../../assets/skills/vue.svg" width="20%"></a>
-          <a href="https://www.ruby-lang.org/ja/"><img src="../../assets/skills/ruby.svg" width="18%"></a>
-          <a href="https://rubyonrails.org/"><img src="../../assets/skills/rails.svg" width="21%" style="margin-bottom: 5%;"></a>
-          <a href="https://developer.apple.com/swift/"><img src="../../assets/skills/swift.svg" width="20%"></a>
-          <a href="https://www.firebase.com/"><img src="../../assets/skills/firebase.svg" width="18%"></a>
-          <a href="https://github.com/"><img src="../../assets/skills/github-icon.svg" width="20%" style="background-color: white; border-radius: 50%;"></a>
-          <a href="https://aws.amazon.com/"><img src="../../assets/skills/aws.svg" width="20%" style="background-color: white; margin-bottom: 3%;"></a>
+          <a href="https://html.spec.whatwg.org/multipage/" target="_blank"><img src="../../assets/skills/html-5.svg" width="20%" style="z-index: 2;"></a>
+          <a href="http://haml.info/" target="_blank"><img src="../../assets/skills/haml.svg" width="20%"></a>
+          <a href="https://www.w3.org/TR/CSS/" target="_blank"><img src="../../assets/skills/css-3.svg" width="20%"></a>
+          <a href="https://sass-lang.com/" target="_blank"><img src="../../assets/skills/sass.svg" width="20%" style="margin-bottom: 4%;"></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="../../assets/skills/javascript.svg" width="20%" style="margin-bottom: 2%;"></a>
+          <a href="https://jquery.com/" target="_blank"><img src="../../assets/skills/jquery.svg" width="21%" style="background-color: white; margin-bottom: 5%;"></a>
+          <a href="https://vuejs.org/" target="_blank"><img src="../../assets/skills/vue.svg" width="20%"></a>
+          <a href="https://www.ruby-lang.org/ja/" target="_blank"><img src="../../assets/skills/ruby.svg" width="18%"></a>
+          <a href="https://rubyonrails.org/" target="_blank"><img src="../../assets/skills/rails.svg" width="21%" style="margin-bottom: 5%;"></a>
+          <a href="https://developer.apple.com/swift/" target="_blank"><img src="../../assets/skills/swift.svg" width="20%"></a>
+          <a href="https://www.firebase.com/" target="_blank"><img src="../../assets/skills/firebase.svg" width="18%"></a>
+          <a href="https://github.com/" target="_blank"><img src="../../assets/skills/github-icon.svg" width="20%" style="background-color: white; border-radius: 50%;"></a>
+          <a href="https://aws.amazon.com/" target="_blank"><img src="../../assets/skills/aws.svg" width="20%" style="background-color: white; margin-bottom: 3%;"></a>
         </div>
       </div>
       <div class="skills">
@@ -75,7 +75,7 @@
     height: 100%;
     margin: auto;
     width: 90vw;
-    padding: 100px 0 100px;
+    padding-top: 100px;
   }
   .line {
     position: absolute;
@@ -228,7 +228,7 @@
   }
   .skills {
     width: 85%;
-    margin: 3rem auto 10rem;
+    margin: 15% auto 15%;
     padding-bottom: 35px;
     border-bottom: solid 2px white;
   }

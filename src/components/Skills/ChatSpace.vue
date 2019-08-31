@@ -5,11 +5,11 @@
     <p>
       <a href="http://3.113.93.153" class="link" target="_blank">JUMP TO "Chat-Space"</a><br><br>
       グループチャットアプリケーション<br><br>
-      使用した言語：<br>
+      【使用した言語】<br>
       Haml・SCSS・Ruby・Ruby on Rails・JavaScript・jQuery・MySQL・Github・AWS<br><br>
-      開発期間と平均作業時間：<br>
-      開発期間：約12日間　1日あたりの平均作業時間：約10時間<br><br>
-      開発体制：<br>
+      【開発期間と平均作業時間】<br>
+      開発期間：約12日間<br>1日あたりの平均作業時間：約10時間<br><br>
+      【開発体制】<br>
       個人開発・Googleスプレッドシートによる進捗管理
     </p><hr>
     <h2>FUNCTION</h2>
@@ -137,7 +137,7 @@
       <h2>自動更新</h2>
       <div class="explains">
         <img src="https://i.gyazo.com/399caf0819ff3f4aafad34b25075ed7a.gif">
-        <h4>自動更新（左画面で入力したものが、右画面で自動的に反映される）</h4>
+        <h4>自動更新<br>（左画面で入力したものが、右画面で自動的に反映される）</h4>
         <p class="explain">
           <ul style="list-style: disc;">
             <li>5秒ごとの自動更新機能</li>
@@ -166,8 +166,8 @@ export default {
 <style scoped>
   .indivisual {
     width: 85%;
-    margin: 3rem auto 10rem;
-    padding-bottom: 35px;
+    margin: 15% auto 40%;
+    padding-bottom: 20px;
     border-bottom: solid 2px white;
     color: white;
   }
@@ -204,7 +204,7 @@ export default {
   }
   ul {
     width: 100%;
-    padding: 0;
+    padding-bottom: 5%;
     z-index: 2;
   }
   .button {
@@ -217,7 +217,7 @@ export default {
     background-color: rgb(50, 50, 50);
     text-decoration: none;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     cursor: pointer;
   }
@@ -254,10 +254,64 @@ export default {
     margin: 3% auto 0;
     font-size: 20px;
     border: solid 1px white;
-    width: 20%;
+    width: 25%;
     cursor: pointer;
     z-index: 2;
     position: relative;
     background-color: black;
+  }
+
+  @media screen and (max-width: 1280px) {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 45px;
+    }
+    .button {
+      font-size: 12px;
+    }
+    h4, .explain, .close {
+      font-size: 20px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 50px !important;
+    }
+    h2 {
+      font-size: 35px !important;
+    }
+    .button {
+      font-size: 14px !important;
+      width: 40% !important;
+    }
+    h4, .explain, .close {
+      font-size: 15px !important;
+    }
+    p {
+      font-size: 20px !important;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 25px !important;
+    }
+    h2 {
+      font-size: 20px !important;
+    }
+    .button {
+      font-size: 10px !important;
+      width: 60% !important;
+    }
+    h4, .explain, .close {
+      font-size: 10px !important;
+    }
+    p {
+      font-size: 10px !important;
+    }
   }
 </style>
