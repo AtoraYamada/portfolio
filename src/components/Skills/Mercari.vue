@@ -246,7 +246,7 @@ export default {
 <style scoped>
   .indivisual {
     width: 85%;
-    margin: 15% auto 40%;
+    margin: 5% auto 0;
     padding-bottom: 20px;
     border-bottom: solid 2px white;
     color: white;
