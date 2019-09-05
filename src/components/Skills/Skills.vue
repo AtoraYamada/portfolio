@@ -65,7 +65,6 @@
     margin-top: -350px;
     background-color: black;
     height: 100%;
-    padding-bottom: 10%;
   }
   p {
     color: white;
@@ -77,6 +76,7 @@
     margin: auto;
     width: 90vw;
     padding-top: 100px;
+    padding-bottom: 10%;
   }
   .line {
     position: absolute;
