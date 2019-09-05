@@ -35,7 +35,7 @@
           <a href="https://aws.amazon.com/" target="_blank"><img src="../../assets/skills/aws.svg" width="20%" style="background-color: white; margin-bottom: 3%;"></a>
         </div>
       </div>
-      <div class="skills">
+      <div class="skills bottom">
         <h1>WORKS</h1>
         <div class="works-wrapper">
           <div class="work-box">
@@ -65,6 +65,7 @@
     margin-top: -350px;
     background-color: black;
     height: 100%;
+    padding-bottom: 10%;
   }
   p {
     color: white;
@@ -289,5 +290,8 @@
     margin-top: 5%;
     padding: 5%;
     color: white;
+  }
+  .bottom {
+    margin-bottom: 0;
   }
 </style>
