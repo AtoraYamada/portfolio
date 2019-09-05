@@ -65,10 +65,11 @@
 <style scoped>
   .content{
     margin-top: -350px;
-    height: 120%;
+    height: 130%;
     background-image: url("../../assets/favorites/back.jpg");
     background-size: 100% 100%;
     text-align: center;
+    padding-bottom: 5%;
   }
   .sencha{
     width: 100%;
