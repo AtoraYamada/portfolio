@@ -239,6 +239,12 @@ export default {
     width: 100%;
     padding: 2% 0 1%;
   }
+  .explains ul {
+    text-align: left;
+  }
+  .explains li {
+    text-align: left;
+  }
   h4 {
     font-size: 20px;
     margin-bottom: 2%;
@@ -249,6 +255,12 @@ export default {
   }
   .explain a {
     color: white;
+  }
+  .explain ul {
+    text-align: left;
+  }
+  .explain li {
+    text-align: left;
   }
   .close {
     margin: 3% auto 0;
