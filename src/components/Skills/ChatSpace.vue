@@ -29,14 +29,14 @@
       <div class="explains">
         <img src="../../assets/skills/chat_space/chat_signup.png">
         <h4>サインアップ画面</h4>
-        <p class="explain">
+        <div class="explain">
           <a href="http://3.113.93.153/users/sign_up" target="_blank">http://3.113.93.153/users/sign_up</a><br>
           <ul style="list-style: disc;">
             <li>gem "Devise"を用いたサインアップ機能</li>
             <li>Nameがユーザー名として登録されます</li>
             <li>EmailとPasswordはログイン時に使用します</li>
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -52,7 +52,7 @@
         <h4>アカウント編集ページへ</h4>
         <img src="../../assets/skills/chat_space/edit_user.png">
         <h4>アカウント編集画面</h4>
-        <p class="explain">
+        <div class="explain">
           <a href="http://3.113.93.153/users/sign_in" class="link" target="_blank">http://3.113.93.153/users/sign_in</a><br>
           <ul style="list-style: disc;">
             <li>gem "Devise"を用いたログイン・ログアウト機能</li>
@@ -60,7 +60,7 @@
             <li>ログイン後、歯車マーク（画像の矢印が指しているマーク）を押すと、アカウント編集ページへ遷移します</li>
             <li>アカウント編集ページで、ログアウトできます</li>
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -74,12 +74,12 @@
         <h4>アカウント編集ページへ</h4>
         <img src="../../assets/skills/chat_space/edit_user.png">
         <h4>アカウント編集画面</h4>
-        <p class="explain">
+        <div class="explain">
           <ul style="list-style: disc;">
             <li>登録したアカウント情報の編集機能</li>
             <li>ログイン後、歯車マーク（画像の矢印が指しているマーク）を押すと、アカウント編集ページへ遷移します</li>
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -97,14 +97,14 @@
         <h4>グループ編集ページへ</h4>
         <img src="../../assets/skills/chat_space/groupedit.png">
         <h4>グループ編集画面</h4>
-        <p class="explain">
+        <div class="explain">
           <ul style="list-style: disc;">
             <li>グループ作成・編集機能</li>
             <li>ログイン後、画像の矢印が指しているマークを押すと、グループ作成ページへ遷移します</li>
             <li>チャットメンバーはインクリメンタルサーチが可能です</li>
             <li>トップページのサイドバーのグループ名をクリック後、ヘッダーの"Edit"ボタンからグループ編集ページへ遷移します</li>
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -118,7 +118,7 @@
         <h4>メッセージ送信</h4>
         <img src="https://i.gyazo.com/87f0a2a0b848721d0c1e1c90bcc17fe2.gif">
         <h4>画像送信</h4>
-        <p class="explain">
+        <div class="explain">
           <ul style="list-style: disc;">
             <li>非同期通信によるメッセージ投稿機能</li>
             <li>ログイン後、トップページのサイドバーのグループ名をクリックすると、グループチャットページへ遷移します</li>
@@ -126,7 +126,7 @@
             <li>写真アイコンをクリックすることで、画像の投稿も可能です</li>
             <li>投稿後、JSでAjaxを用いて非同期通信を行い、メッセージを画面に表示しています</li>
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -138,13 +138,13 @@
       <div class="explains">
         <img src="https://i.gyazo.com/399caf0819ff3f4aafad34b25075ed7a.gif">
         <h4>自動更新<br>（左画面で入力したものが、右画面で自動的に反映される）</h4>
-        <p class="explain">
+        <div class="explain">
           <ul style="list-style: disc;">
             <li>5秒ごとの自動更新機能</li>
             <li>5秒ごとに最新のメッセージの有無を判断します</li>
             <li>JSでAjaxを用いて非同期通信を行い、メッセージを画面に表示しています</li>
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -239,6 +239,13 @@ export default {
     width: 100%;
     padding: 2% 0 1%;
   }
+  .explains ul {
+    text-align: left;
+  }
+  .explains li {
+    text-align: left;
+    font-size: 20px;
+  }
   h4 {
     font-size: 20px;
     margin-bottom: 2%;
@@ -249,6 +256,13 @@ export default {
   }
   .explain a {
     color: white;
+  }
+  .explain ul {
+    text-align: left;
+  }
+  .explain li {
+    text-align: left;
+    font-size: 20px;
   }
   .close {
     margin: 3% auto 0;
