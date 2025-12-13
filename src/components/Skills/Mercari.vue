@@ -324,6 +324,7 @@ export default {
   }
   .explains li {
     text-align: left;
+    font-size: 20px;
   }
   h4 {
     font-size: 20px;
@@ -341,6 +342,7 @@ export default {
   }
   .explain li {
     text-align: left;
+    font-size: 20px;
   }
   .caution {
     font-size: 20px;
