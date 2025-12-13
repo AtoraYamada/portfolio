@@ -43,12 +43,12 @@
       <div class="explains">
         <img src="../../assets/skills/mercari/er.png">
         <h4>ER図</h4>
-        <p class="explain">
+        <div class="explain">
           <a href="https://github.com/AtoraYamada/freemarket_sample_53b" target="_blank">README</a><br>
           <ul style="list-style: disc;">
             <li>詳細は上記リンクのREADMEをご参照下さい</li>
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -62,7 +62,7 @@
         <h4>登録方法選択画面<br>（「メールアドレスで登録」を選択）</h4>
         <img src="../../assets/skills/mercari/signup_eg.png">
         <h4>登録１ページ目<br>（バリデーションによるエラーメッセージ）</h4>
-        <p class="explain">
+        <div class="explain">
           <a href="http://52.199.29.90/signup" target="_blank">http://52.199.29.90/signup</a><br>
           <ul style="list-style: disc;">
             <li>ウィザード形式のフォーム</li>
@@ -83,7 +83,7 @@
           <a href="https://atora1992.hatenablog.com/entry/2019/08/29/115959" target="_blank">関連ブログ記事３</a><br>
           <a href="https://atora1992.hatenablog.com/entry/2019/07/25/164315" target="_blank">関連ブログ記事４</a><br>
           <a href="https://atora1992.hatenablog.com/entry/2019/08/12/185922" target="_blank">関連ブログ記事５</a><br>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -97,7 +97,7 @@
         <h4>ログイン画面</h4>
         <img src="../../assets/skills/mercari/logout.png">
         <h4>ログアウト画面</h4>
-        <p class="explain">
+        <div class="explain">
           <a href="http://52.199.29.90/users/sign_in" target="_blank">http://52.199.29.90/users/sign_in</a>
           <ul style="list-style: disc;">
             <li>gem "Devise"を用いたログイン・ログアウト機能</li>
@@ -106,7 +106,7 @@
             <li>ローカルでは、SNS認証によるPW不要のログインが可能です（SSL化・ドメイン取得で本番環境でも動くよう実装）</li><br>
             ※ロボット認証は未実装です
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -118,13 +118,13 @@
       <div class="explains">
         <img src="https://i.gyazo.com/5f1a5c77f7de23adb1d8b45db66a2118.gif">
         <h4>カテゴリーデータ</h4>
-        <p class="explain">
+        <div class="explain">
           <ul style="list-style: disc;">
             <li>gem "ancestry"を用いたカテゴリーデータ作成</li>
           </ul>
           <a href="https://atora1992.hatenablog.com/entry/2019/07/08/215444" target="_blank">関連ブログ記事１</a><br>
           <a href="https://atora1992.hatenablog.com/entry/2019/07/08/215737" target="_blank">関連ブログ記事２</a>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -138,7 +138,7 @@
         <h4>カテゴリー・サイズ選択（服サイズ）</h4>
         <img src="https://i.gyazo.com/86c17169bd400935037d5787243ed7a4.gif">
         <h4>カテゴリー・サイズ選択（靴サイズ）</h4>
-        <p class="explain">
+        <div class="explain">
           <ul style="list-style: disc;">
             <li>非同期通信による動的セレクトボックス</li>
             <li>ログイン後、商品出品・編集画面でご覧いただけます</li>
@@ -149,7 +149,7 @@
           </ul>
           <a href="https://atora1992.hatenablog.com/entry/2019/07/17/140342" target="_blank">関連ブログ記事１</a><br>
           <a href="https://atora1992.hatenablog.com/entry/2019/07/17/154613" target="_blank">関連ブログ記事２</a>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -161,7 +161,7 @@
       <div class="explains">
         <img src="https://i.gyazo.com/31bea66f731c1b37698236fb42b69550.gif">
         <h4>画像プレビュー（複数枚投稿可能）</h4>
-        <p class="explain">
+        <div class="explain">
           <ul style="list-style: disc;">
             <li>file_fieldを用いた画像アップロード</li>
             <li>Active Storageを使用しています</li>
@@ -169,7 +169,7 @@
             <li>exif.jsで画像の向きを取得し、表示方向を調整しています</li>
             <li>「リセットアップロード」を押すことで、アップロードをリセットできます</li>
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -183,7 +183,7 @@
         <h4>商品出品（上部）</h4>
         <img src="../../assets/skills/mercari/list2.png">
         <h4>商品出品（下部）</h4>
-        <p class="explain">
+        <div class="explain">
           <a href="http://52.199.29.90/products/new" target="_blank">http://52.199.29.90/products/new</a>
           <ul style="list-style: disc;">
             <li>ログイン後、上記リンクから商品出品ページへ遷移できます</li>
@@ -193,7 +193,7 @@
             <li>ブランドテーブルに既存レコードがあればそのレコードを参照し、ない場合には新たにレコードを作成します</li>
             <li>出品者情報（ユーザーテーブルのid）も同時に保存されます</li>
           </ul>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
@@ -207,7 +207,7 @@
         <h4>商品編集（上部）</h4>
         <img src="../../assets/skills/mercari/edit2.png">
         <h4>商品編集（下部）</h4>
-        <p class="explain">
+        <div class="explain">
           <ul style="list-style: disc;">
             <li>ログイン後、マイページのサイドバー「出品した商品-出品中-」をクリックし商品を選択後、「商品を編集」にてご覧いただけます。もしくはログイン後、http://52.199.29.90/products/出品番号/edit　にてご覧いただけます。</li>
             ※出品番号：出品後、商品詳細ページのURLの数字を入力してください
@@ -224,7 +224,7 @@
           </ul>
           <a href="https://atora1992.hatenablog.com/entry/2019/08/07/181741" target="_blank">関連ブログ記事１</a><br>
           <a href="https://atora1992.hatenablog.com/entry/2019/07/10/201455" target="_blank">関連ブログ記事２</a>
-        </p>
+        </div>
         <div class="close" @click="showModal = false">
           CLOSE
         </div>
