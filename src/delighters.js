@@ -90,3 +90,5 @@ var Delighters = new (function() {
 	self.init = init;
 	self.config = config;
 })();
+
+export default Delighters;
