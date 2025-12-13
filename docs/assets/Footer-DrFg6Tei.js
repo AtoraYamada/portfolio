@@ -1,1 +1,0 @@
-import{_ as t,c as a,a as e,b as r,o as c}from"./index-heX_7QXx.js";const s={};function n(f,o){return c(),a("footer",null,[...o[0]||(o[0]=[e("p",null,[r(" 日本茶と"),e("br"),r(" プログラミングは"),e("br"),r(" たがへども"),e("br"),r(" おくふかきこと"),e("br"),r(" おなじ所なり ")],-1)])])}const d=t(s,[["render",n],["__scopeId","data-v-ffa29cd0"]]);export{d as default};
