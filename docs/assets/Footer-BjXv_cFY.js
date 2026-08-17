@@ -1,0 +1,1 @@
+import{c as e,i as t,n,o as r,t as i}from"./index-9_aLrTD7.js";var a={};function o(i,a){return e(),t(`footer`,null,[...a[0]||=[n(`p`,null,[r(` 日本茶と`),n(`br`),r(` プログラミングは`),n(`br`),r(` たがへども`),n(`br`),r(` おくふかきこと`),n(`br`),r(` おなじ所なり `)],-1)]])}var s=i(a,[[`render`,o],[`__scopeId`,`data-v-ffa29cd0`]]);export{s as default};
